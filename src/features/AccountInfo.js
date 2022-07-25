@@ -20,6 +20,7 @@ export function AccountInfo() {
 
     return (
         <div>
+            <img src={`https://monkey.banano.cc/api/v1/monkey/${value}?format=png` } alt='logo' />
             <div className={styles.row}>
                 <span className={styles.value}>{(!balance) ? 'Loading...' : `Raw Balance: ${balance}`}</span>
             </div>

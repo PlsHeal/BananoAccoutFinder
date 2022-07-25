@@ -12,45 +12,59 @@
   margin-bottom: 16px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
 .value {
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-top: 2px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .button {
   appearance: none;
   background: none;
-  font-size: 32px;
+  font-size: 24px;
   padding-left: 12px;
   padding-right: 12px;
   outline: none;
   border: 2px solid transparent;
-  color: rgb(112, 76, 182);
+  color: rgb(5, 100, 36);
   padding-bottom: 4px;
   cursor: pointer;
-  background-color: rgba(112, 76, 182, 0.1);
-  border-radius: 2px;
+  background-color: #4CBF4B;
+  border-radius: 10px;
   transition: all 0.15s;
 }
 
 .textbox {
-  font-size: 32px;
+  margin-bottom: 80px;
+  font-size: 24px;
   padding: 2px;
-  width: 64px;
+  width: 350px;
+  border: solid 1px black;
+  border-radius: 40px;
   text-align: center;
   margin-right: 4px;
 }
 
+.textbox:hover {
+  border: solid 1px blue;
+}
+
 .button:hover,
 .button:focus {
-  border: 2px solid rgba(112, 76, 182, 0.4);
+  border: 2px solid rgb(5, 100, 36);
 }
 
 .button:active {
-  background-color: rgba(112, 76, 182, 0.2);
+  background-color: rgb(5, 100, 36);
 }
 
 .asyncButton {
@@ -60,7 +74,7 @@
 
 .asyncButton:after {
   content: '';
-  background-color: rgba(112, 76, 182, 0.15);
+  background-color: rgb(5, 100, 36, 0.15);
   display: block;
   position: absolute;
   width: 100%;
